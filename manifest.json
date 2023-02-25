@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+
+  "name": "Website Quick Reference",
+  "description": "This utility helps you to extract website sources according to Harvard standards quickly!",
+  "version": "1.0.8",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+   "default_icon": "icon.png",
+   "default_popup": "popup.html",
+   "default_title": "Website Quick Reference"
+  },
+  "permissions": [
+	"activeTab",
+	"debugger"
+  ],
+  "host_permissions": [
+   "https://*.com/*"
+   ]
+
+}

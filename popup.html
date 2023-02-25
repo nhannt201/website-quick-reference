@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+    <title>Quick Reference Website</title>
+    <script src="popup.js"></script>
+	<link href="bootstrap.min.css" rel="stylesheet">
+
+	<style>
+	body {
+		width: 450px;
+		height: auto;
+		overflow-x: auto;	
+	}	
+	.keongang {
+		overflow-x: auto;
+		white-space: nowrap;
+	}
+	.btn {
+		width: 100%;
+	}
+	footer {
+		padding: 20px;
+		font-size: 12px;
+	}
+	.logohome {
+		padding: 15px;
+	}
+	#refweb {
+		font-family: calibri;
+	}
+	#intext {
+		font-family: calibri;
+	}
+	#main-content {
+		padding-top: 50px;
+	}
+	</style>
+  </head>
+  <body>
+  	<!--nav-->
+	<!-- Image and text -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <a class="navbar-brand" href="#">
+    <img src="icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+    Website Quick Reference
+  </a>
+  <button class="navbar-toggler" type="button"  data-toggle="modal" data-target="#usM">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+</nav>
+	<!--endnav-->
+  <main role="main" id="main-content" class="container">
+
+	<div class="logohome text-center"><div id="content-tam"><br><img src="./img/wait.gif" width="120px"><h5>Getting page information...</h5></div></div>
+	<div id="after-intext" style="display: none;">
+				<div class="card">
+				  <div class="card-header">Citing sources from Website</div>
+				  <div class="card-body" >
+					<div class="p-2 border" id="refweb">Getting information...</div>
+					<button id="btnCopy1" style="display: none;" class="btn btn-light">Click to copy</button>
+					<button id="btnEdit" class="btn btn-light mt-2">Editing</button>
+						<div id="edit_nc"  style="display: none;"class="card-body border">
+							<div class="input-group mt-3">
+								<span class="input-group-text" id="">Author</span>
+								<input type="text" id="firstname" class="form-control" placeholder="First name">
+								<input type="text" id="lastname" class="form-control" placeholder="Last name" >
+							</div>
+							<div class="input-group mt-3">
+								<span class="input-group-text">Page title</span>
+								<input type="text" id="pagetitle" class="form-control">
+							</div>
+							<div class="input-group mt-3">
+								<span class="input-group-text">Site name</span>
+								<input type="text" id="sitename" class="form-control">
+							</div>
+							<div class="input-group mt-3">
+								<span class="input-group-text">Publishing year</span>
+								<input type="text" id="published_time" class="form-control">
+							</div>
+							<div class="input-group mt-3">
+								<input type="button" id="update_ref" value="Update" class=" btn btn-light">
+							</div>
+						</div>
+				  </div>
+				  
+				<div class="card-header">In-text Citation</div>
+				<div class="card-body" id="intext"></div>
+			</div>
+	</div>
+	<!--about us-->
+  <!-- Modal -->
+<div class="modal fade" id="usM" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="usMLabel">About Me</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body"><center>
+	  	<h5>Website Quick Reference<br>Citation web source</h5>
+        <p>Author & Developer by <br><i>Nguyễn Trung Nhẫn (K3)</i></p>
+		<p>Contact author & publisher:<br><i> sunstudio.dev@gmail.com</i></p>
+		<p>Visit website:<i> <a href="http://trungnhan.name.vn" target="_blank">trungnhan.name.vn</a></i></p>
+		<b>Made with <span style="color: #e25555;">&#9829;</span> BTEC FPT British College</b>
+
+		</center>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+  <!--end au-->
+	</main>
+	<footer class="text-center p-4 mt-3" style="background-color: rgba(0, 0, 0, 0.05); ">
+	 <!-- Copyright -->
+    <b>© 2023 Nguyễn Trung Nhẫn</b>
+  <!-- Copyright -->
+	</footer>
+	<script src="./js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="./js/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="./js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
